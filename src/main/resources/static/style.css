@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/* --- メッセージ表示用クラス --- */
+.message {
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.error-message {
+    color: #d8000c; /* 濃い赤色 */
+}
+
+/* --- テキストスタイル用クラス --- */
+.p-text {
+    font-size: 24px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+/* --- コンテナ（フォームなどを囲む枠）用クラス --- */
+.container {
+    width: 300px;
+    margin: 0 auto; /* 中央寄せ */
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* --- 入力フィールド用スタイル --- */
+input[type="text"],
+input[type="password"] {
+    width: 93%; /* padding分を考慮して調整 */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* --- ボタン用スタイル --- */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #55c559; /* 緑色 */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; /* マウスオーバーでカーソルをポインターに */
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049; /* ホバー時の色（少し濃い緑） */
+}
+
+/* --- リンク集用クラス --- */
+.links {
+    font-size: 16px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+/* --- 赤いボタン用クラス（汎用） --- */
+.button-red {
+    color: #ffffff;
+    background-color: #d8000c; /* 濃い赤色 */
+}
+
+/* --- ユーザーリスト表示用の追加スタイル (users.htmlで利用) --- */
+.user-list {
+    list-style: none;
+    padding: 0;
+}
+
+.user-list li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-list li span {
+    font-weight: bold;
+    color: #333;
+}
+
+.user-list li a {
+    background-color: #007bff; /* 青色 */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.user-list li a:hover {
+    background-color: #0056b3; /* ホバー時の色（少し濃い青） */
+}
+
+/* --- ユーザー詳細表示用の追加スタイル (user-detail.htmlで利用) --- */
+.detail-item {
+    margin-bottom: 10px;
+}
+
+.detail-item label {
+    font-weight: bold;
+    display: inline-block;
+    width: 100px; /* ラベルの幅を固定して揃える */
+}
+
+.detail-item span {
+    color: #555;
+}
