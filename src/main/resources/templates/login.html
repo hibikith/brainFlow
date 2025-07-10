@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>ログイン</title>
+	<link rel="style.css" href="/css/style.css"
+</head>
+<body>
+	<div class="container">
+		<p class="p-text">ログイン</p>
+		<form id="loginForm">
+			<div class="message error-message" 
+			      id="errorMessage" 
+				  style="display: none;">
+			</div>
+			
+			<input type="text" 
+				   id="usernameOrEmail" 
+				   placeholder="ユーザー名またはメールアドレス" 
+				   required>
+			
+			<input type="text" 
+			       id="password" 
+				   placeholder="パスワード" 
+				   required>
+			
+			<button type="submit">ログイン</button>
+				
+		</form>
+		
+		<div class="links">
+			<p><a href="/">トップページに戻る</a></p>
+			<p><a href="/register">新規登録はこちら</a></p>
+	</div>
+</body>
+</html>
