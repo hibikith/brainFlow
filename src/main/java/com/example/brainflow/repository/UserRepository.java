@@ -23,6 +23,7 @@ public interface UserRepository extends JpaRepository<User, Long> {
     // ユーザー名またはメールアドレスでユーザーを検索するメソッド
     // OR条件で検索し、両方のフィールドに対して同じ識別子（identifier）を渡すことを想定
     Optional<User> findByUsernameOrEmail(String username, String email);
+    
 }
 
 
